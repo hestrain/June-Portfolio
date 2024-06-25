@@ -60,12 +60,66 @@
   main {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  aside {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+    border-right: solid #13293d 3px;
   }
   
-  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 20px;
+  }
+  section p {
+    max-width: 800px;
+  }
 
+  #article1 {
+    background-image: url("../images/barn2.jpg");
+    order: 1;
+    width: 100% !important;
+    min-width: 400PX;
+  }
+  #article2 {
+    background-image: url("../images/barn2.jpg");
+    order: 2;
+  }
+  #article3 {
+    background-image: url("../images/barn2.jpg");
+    order: 3;
+  }
+  #article4 {
+    background-image: url("../images/barn2.jpg");
+    order: 4;
+  }
+  #article5 {
+    background-image: url("../images/barn2.jpg");
+    order: 5;
+  }
+
+  .smaller-img {
+    width: 50% !important;
+  }
   
+  .sample-img {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    height: 200px;
+    min-width: 200px;
+    border: 4px solid #68e2ed;
+    margin: 10px;
+  }
+
+/*   
 
   .about {
     display: flex;
@@ -124,7 +178,7 @@
     border-bottom: #13293d 2px solid;
     font-size: 20px;
     color: black;
-  }
+  } */
   
   /* .card {
     border-style: solid;
