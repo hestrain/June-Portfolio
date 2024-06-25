@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  header {
+    padding: 5px 5px 10px 0;
+    text-align: center;
+    background: #13293d;
+    color: #68e2ed;
+    display: flex;
+    justify-content:space-between;
+    height: 70px;
+    align-items: center;
+  }
+  nav {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  nav a {
+    text-decoration: none;
+    text-align: center;
+    border-bottom: #68e2ed 2px solid;
+    font-size: 20px;
+    color: #68e2ed;
+    padding: 0px 10px;
+  }
+
+  header h1 {
+    background-color: #68e2ed;
+    color: #13293d;
+    height: 40px;
+    width: 340px;
+    text-align: right;
+    position: relative;
+    padding-right: 10px;
+    display: flex;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    height: 200px;
+  }
+
+  .hero h2 {
+    background-color: #68e2ed;
+    color: #13293d;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    top: 110px;
+    right: 60px;
+    margin: 0;
+    float: right;
+    position: relative;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  
+  footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+    margin-top: auto;
+  }
+  
+
+  .about {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    align-content: flex-start;
+    width: 400px;
+    align-self: flex-start;
+    left: 10px;
+  }
+
+  .bio {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    align-content: flex-start;
+    min-width: 400px;
+  }
+
+  .about p{
+    color: #13293d;
+    align-self: start;
+  }
+
+
+  .work {
+    flex: 5;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 10px 10px 5px grey;
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 300px;
+    min-width: 200px;
+  }
+  
+  .card header {
+    padding: 20px;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
