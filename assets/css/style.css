@@ -47,7 +47,7 @@
 /* ======= large image below header style ==========*/
   .hero {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-image: url(../images/mushrromLog.jpg);
     background-repeat: repeat-x;
     background-size: 100%;
@@ -62,22 +62,23 @@
     min-width: 150px;
     height: fit-content;
     text-align: center;
-    top: 110px;
-    right: 60px;
-    margin: 0;
+    /* top: 110px;
+    right: 60px; */
+    margin-right: 60px;
+    margin-top: 110px;
     float: right;
     position: relative;
     font-size: 30px;
     padding: 3px;
+    order: 2;
   }
 
   .hero img {
-    position: absolute;
-    left: 26px;
+    float: left;
     max-width: 181px;
-    top: 88px;
     border: 4px solid var(--aqua);
     border-right: 4px solid var(--navy);
+    order: 1;
   }
 
 /* ======= main sections style ==========*/
@@ -236,7 +237,7 @@
   /* ======= media screensize alteration ==========*/
   @media screen and (max-width: 768px) {
     main,
-    nav, footer, .links {
+    nav, footer, .links, .hero {
       flex-direction: column;
       align-items: center;
     }
@@ -258,7 +259,19 @@
       position: relative;
       top: auto;
       left: auto;
+      order: 1;
+      width: 120px;
+    }
+    .hero h2 {
+      margin: 0;
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
+      margin-right: 0px;
+      margin-top: 0px;
       order: 2;
+      float: none;
     }
   }
   
