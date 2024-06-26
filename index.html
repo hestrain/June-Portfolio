@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- html data and links here -->
     <title>Heather's Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- Header (title and nav links) WORKING-->
     <header>
       <h1>HeatherEllen Strain</h1>
         <!-- Navbar -->
       <nav>
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Resume</a>
+        <a href="#About Me">About Me</a>
+        <a href="#Work">Work</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Resume">Resume</a>
       </nav>
     </header>
+    <!-- header image w/subtitle -->
+     <!-- image nto working, but background colors adn subtitle working -->
     <section class="hero">
-        <h2>Welcome to my twisted mind</h2>
+        <h2>Portfolio Site</h2>
         <!-- <img src="./assets/images/barn2.jpg"> -->
     </section>
 
     <!-- Body -->
-    <main>
-      <div class="about">
-        <h1>About Me</h1>
-      </div>
-      <div class="bio">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus eius cum repellendus! Ipsam deserunt ab in expedita veritatis temporibus dolorem repudiandae error corporis, debitis, quam facilis iste officia dolore facere!</p>
-      </div>
+     <!-- About Me + bio -->
+     <main class="About">
+      <aside>
+        <h2 id="About Me">ABOUT ME</h2>
+      </aside>
+
+      <section>
+        <p>
+          <strong>Bio: </strong>HeatherEllen Strain (she/they) is queer and disabled artist currently working in currently living Tio'tia:ke (Montreal). 
+          <br>They used to focus on Stage Management, but are now focused on pursuing full stack development. 
+          <br><br>
+          <strong>Recent Theatre Credits: </strong>Small Mouth Sounds (Stage Manager/Segal Centre) Once (Apprentice Stage Manager/Segal Centre) All Shall be Well (Stage Manager & Sound Designer/Repercussion Theatre) Much Ado About Nothing, Romeo and Juliet, Measure for Measure (Apprentice Stage Manager/Repercussion Theatre), Tomorrow (Stage Manager/Sound Designer, Hooks and Crooks), Don't Read The Comments (Stage Manager, Sermo Scomber) 
+        </p>
+      </section>
     </main>
+    <main>
+      <aside>
+        <h2 id="Work">MY WORK</h2>
+      </aside>
+      <section class="work">
+        <article class="sample-img" id="article1"><h3>Code Refactor</h3><p> 1 a re-working of code</p></article>
+        <article class="sample-img smaller-img" id="article2"><h3>Work 2</h3><p>2 short desc</p></article>
+        <article class="sample-img smaller-img" id="article3"><h3>Work 3</h3><p>3 short desc</p></article>
+        <article class="sample-img smaller-img" id="article4"><h3>Work 4</h3><p>4 short desc</p></article>
+        <article class="sample-img smaller-img" id="article5"><h3>Work 5</h3><p>5 short desc</p></article>
+      </section>
+    </main>
+    <main>
+      <aside>
+        <h2 id="Contact">CONTACT</h2>
+      </aside>
+      <section class="links">
+        <a href="438-838-9324">438.838.9324</a>
+        <a href="hestrain@gmail.com">hestrain@gmail.com</a>
+        <a href="github.com/hestrain">Github</a>
+        <a id="Resume" href="https://drive.google.com/file/d/1GK87nxxsAXheRG0u7J32qgv_BFapWHmH/view?usp=sharing">Resume</a>
+      </section>
+    </main>
+    
+    <footer>
+        <p>thanks for visiting</p>
+    </footer>
     </body>
 </html>
